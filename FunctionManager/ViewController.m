@@ -33,7 +33,7 @@
     [FunctionManager showMessage:@"GymPal" withMessage:@"Hello" withDelegage:nil view:self];
 }
 - (IBAction)btnConfirmClick:(id)sender {
-   // [FunctionManager showMessageWithConfirm:@"GymPal" withMessage:@"Are You sure?" withTag:2 withDelegage:self viewObj:self];
+
 }
 - (void)didReceiveMemoryWarning
 {
