@@ -10,7 +10,7 @@
 
 @interface ViewController : UIViewController <UIAlertViewDelegate,UIActionSheetDelegate>
 {
-    UILabel *lblSize;
+    UILabel *lblSize;//Resizeble label
 }
 @property(nonatomic,strong) IBOutlet UILabel *lblSize;
 

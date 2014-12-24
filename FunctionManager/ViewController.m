@@ -36,7 +36,7 @@
 - (IBAction)btnConfirmClick:(id)sender {
     lblSize.text=@"Do any additional setup after loading the view from its nib.";
     lblSize.frame=[FunctionManager getDynamicHeightofLabel:lblSize.text myLabel:lblSize];
-    lblSize.numberOfLines=lblSize.frame.size.height/15;
+    lblSize.numberOfLines=lblSize.frame.size.height/15;//count line
     lblSize.backgroundColor=[UIColor redColor];
     [lblSize setNeedsDisplay];
 }

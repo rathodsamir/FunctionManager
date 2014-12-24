@@ -311,7 +311,8 @@
     return labelRect;
     
 /*
-    
+    another code
+ 
     CGSize constrainedSize = CGSizeMake(resizableLable.frame.size.width  , 9999);
     
     NSDictionary *attributesDictionary = [NSDictionary dictionaryWithObjectsAndKeys:

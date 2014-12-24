@@ -49,5 +49,5 @@
 #pragma mark - Dynamicheight of UILabel
 
 + (CGRect)getDynamicHeightofLabel : (NSString *)textString myLabel:(UILabel *)resizableLable;
-
+/**/
 @end
