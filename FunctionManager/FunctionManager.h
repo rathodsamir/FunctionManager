@@ -10,7 +10,6 @@
 
 @interface FunctionManager : NSObject
 
-
 #pragma mark - String Operations
 +(NSString *)removeNull:(NSString *)str;
 +(NSString *)makeFirstCharecterCapital : (NSString *)str;
@@ -21,8 +20,6 @@
 +(void)showMessage:(NSString *)pstrTitle withMessage:(NSString *)pstrMsg withDelegage:(id)pIDDelegate;
 +(void)showMessageWithConfirm:(NSString *)pstrTitle withMessage:(NSString *)pstrMsg withTag:(NSInteger)pintTag withDelegage:(id)pIDDelegate;
 +(void)showMessageWithButtons:(NSString *)pstrTitle withMessage:(NSString *)pstrMsg withOtherButtons:(NSString *)pstrBtns withTag:(NSInteger)pintTag withDelegage:(id)pIDDelegate;
-
-
 +(void)showMessage:(NSString *)pstrTitle withMessage:(NSString *)pstrMsg withDelegage:(id)pIDDelegate  view:(UIViewController *)veiwObj;
 
 //+(void)showMessageWithConfirm:(NSString *)pstrTitle withMessage:(NSString *)pstrMsg withTag:(NSInteger)pintTag withDelegage:(id)pIDDelegate viewObj:(UIViewController *)viewObject;
@@ -48,4 +45,9 @@
 
 #pragma  mark - UIColor
 + (UIColor *)getRGBColor : (float)r g:(float)g b:(float)b;
+
+#pragma mark - Dynamicheight of UILabel
+
++ (CGRect)getDynamicHeightofLabel : (NSString *)textString myLabel:(UILabel *)resizableLable;
+
 @end
