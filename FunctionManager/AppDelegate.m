@@ -16,9 +16,12 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     //self.window.backgroundColor = [UIColor whiteColor];
+     ViewController *viewObj =[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     
-    ViewController *viewObj =[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-    self.window.rootViewController=viewObj;
+    UINavigationController *navObj =[[UINavigationController alloc] initWithRootViewController:viewObj];
+    
+   
+    self.window.rootViewController=navObj;
     [self.window makeKeyAndVisible];
     
     NSString *strTemp =@"          ABCd         ";
