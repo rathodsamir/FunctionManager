@@ -304,10 +304,18 @@
 #pragma mark - Dynamicheight of UILabel
 
 + (CGRect)getDynamicHeightofLabel : (NSString *)textString myLabel:(UILabel *)resizableLable{
+    
+    CGSize maxSize = CGSizeMake(resizableLable.frame.size.width, MAXFLOAT);
+    
+    CGRect labelRect = [resizableLable.text boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:resizableLable.font} context:nil];
+    return labelRect;
+    
+/*
+    
     CGSize constrainedSize = CGSizeMake(resizableLable.frame.size.width  , 9999);
     
     NSDictionary *attributesDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
-                                          [UIFont fontWithName:@"HelveticaNeue" size:11.0], NSFontAttributeName,
+                                          [UIFont fontWithName:@"HelveticaNeue" size:11.0], NSFontAttributeName,NSLineBreakByWordWrapping,
                                           nil];
     
     NSMutableAttributedString *string = [[NSMutableAttributedString alloc] initWithString:textString attributes:attributesDictionary];
@@ -317,8 +325,9 @@
     if (requiredHeight.size.width > resizableLable.frame.size.width) {
         requiredHeight = CGRectMake(0,0, resizableLable.frame.size.width, requiredHeight.size.height);
     }
+    
     CGRect newFrame = resizableLable.frame;
     newFrame.size.height = requiredHeight.size.height;
-    return newFrame;
+    return newFrame;*/
 }
 @end
