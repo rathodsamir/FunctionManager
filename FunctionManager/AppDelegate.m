@@ -34,6 +34,9 @@
         NSLog(@"Before trimWhiteSpace=%@",strTemp);
     }
     
+    
+    //Code for below IOS 8 versions
+    
     //[FunctionManager showMessage:@"GymPal" withMessage:@"Good" withDelegage:nil];
     //[FunctionManager showMessageWithConfirm:@"GymPal" withMessage:@"Are you sure?" withTag:1 withDelegage:self];
     //[FunctionManager showMessageWithButtons:@"GymPal" withMessage:@"Select Options" withOtherButtons:@"1,2,3,4,5,6" withTag:1 withDelegage:self];
