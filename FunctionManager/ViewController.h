@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController <UIAlertViewDelegate,UIActionSheetDelegate>
+{
+    UILabel *lblSize;
+}
+@property(nonatomic,strong) IBOutlet UILabel *lblSize;
 
 - (IBAction)btnAlertClick:(id)sender;
 - (IBAction)btnConfirmClick:(id)sender;
