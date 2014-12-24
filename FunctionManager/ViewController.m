@@ -13,6 +13,7 @@
 @end
 
 @implementation ViewController
+@synthesize lblSize;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,7 +34,11 @@
     [FunctionManager showMessage:@"GymPal" withMessage:@"Hello" withDelegage:nil view:self];
 }
 - (IBAction)btnConfirmClick:(id)sender {
-
+    lblSize.text=@"Do any additional setup after loading the view from its nib.";
+    lblSize.frame=[FunctionManager getDynamicHeightofLabel:lblSize.text myLabel:lblSize];
+    lblSize.numberOfLines=lblSize.frame.size.height/15;
+    lblSize.backgroundColor=[UIColor redColor];
+    [lblSize setNeedsDisplay];
 }
 - (void)didReceiveMemoryWarning
 {
