@@ -35,7 +35,7 @@
     }
     
     
-    //Code for below IOS 8 versions
+    //Code for below IOS 8 versions not for IOS8
     
     //[FunctionManager showMessage:@"GymPal" withMessage:@"Good" withDelegage:nil];
     //[FunctionManager showMessageWithConfirm:@"GymPal" withMessage:@"Are you sure?" withTag:1 withDelegage:self];
